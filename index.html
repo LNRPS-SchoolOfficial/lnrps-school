@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laxmi Narayan Residential Public School</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+
+    /* HEADER */
+    header {
+      background: #0b3c5d;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #08314d;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      display: block;
+    }
+
+    nav a:hover {
+      background: #0b3c5d;
+    }
+
+    /* BANNER */
+    .banner {
+      background: url("images/banner.jpg") center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+    }
+
+    .banner h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .banner p {
+      font-size: 18px;
+    }
+
+    /* CONTENT */
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+      color: #0b3c5d;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #f1f7fb;
+      padding: 20px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    footer {
+      background: #0b3c5d;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="images/school-logo.png" alt="School Logo">
+    <h1>Laxmi Narayan Residential Public School</h1>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="academics.html">Academics</a>
+    <a href="admission.html">Admissions</a>
+    <a href="notice.html">Notices</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- BANNER -->
+  <div class="banner">
+    <div class="banner-content">
+      <h2>Welcome to LNR Public School</h2>
+      <p>Education • Discipline • Excellence</p>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <h3>About Our School</h3>
+    <p>
+      Laxmi Narayan Residential Public School is committed to providing quality
+      education in a disciplined and nurturing environment. We focus on academic
+      excellence, moral values, and overall personality development.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Qualified Teachers</h3>
+        <p>Experienced and dedicated faculty guiding students towards success.</p>
+      </div>
+
+      <div class="card">
+        <h3>Modern Learning</h3>
+        <p>Activity-based teaching with smart learning techniques.</p>
+      </div>
+
+      <div class="card">
+        <h3>Safe Campus</h3>
+        <p>Secure and peaceful environment for students.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Laxmi Narayan Residential Public School. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

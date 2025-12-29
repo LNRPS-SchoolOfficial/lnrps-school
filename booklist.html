@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book List | Laxmi Narayan Residential Public School</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+
+    /* HEADER */
+    header {
+      background: #0b3c5d;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+    }
+
+    header img {
+      height: 55px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #08314d;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      display: block;
+    }
+
+    nav a:hover {
+      background: #0b3c5d;
+    }
+
+    /* CONTENT */
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0b3c5d;
+      border-bottom: 2px solid #0b3c5d;
+      padding-bottom: 8px;
+    }
+
+    .pdf-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .pdf-list li {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .pdf-list a {
+      text-decoration: none;
+      color: #0b3c5d;
+      font-weight: bold;
+    }
+
+    .pdf-list a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #0b3c5d;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="images/school-logo.png" alt="School Logo">
+    <h1>Laxmi Narayan Residential Public School</h1>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="notice.html">Notices</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booklist.html">Book List</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- BOOK LIST -->
+  <div class="container">
+    <h2>Book List & Documents</h2>
+
+    <ul class="pdf-list">
+      <li>
+        Class-wise Book List (2025–26)
+        <a href="pdfs/book-list-2025-26.pdf" target="_blank">View PDF</a>
+      </li>
+
+      <li>
+        Holiday Homework
+        <a href="pdfs/holiday-homework.pdf" target="_blank">View PDF</a>
+      </li>
+
+      <li>
+        Admission Form
+        <a href="pdfs/admission-form.pdf" target="_blank">View PDF</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Laxmi Narayan Residential Public School. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

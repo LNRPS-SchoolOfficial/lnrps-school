@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Login</title>
+</head>
+<body>
+
+<h2>Admin Login</h2>
+
+<input type="email" id="email" placeholder="Email"><br><br>
+<input type="password" id="password" placeholder="Password"><br><br>
+<button onclick="login()">Login</button>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyCxxtNQXHBQwO4LhwOlvecIWfAY_AEa4W0",
+  authDomain: "lnrps-school.firebaseapp.com",
+  projectId: "lnrps-school",
+  storageBucket: "lnrps-school.firebasestorage.app",
+  messagingSenderId: "171557307648",
+  appId: "1:171557307648:web:e91ce6c72aa400a42f1fe5",
+  measurementId: "G-5V3J908J7R"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+
+function login() {
+  auth.signInWithEmailAndPassword(
+    email.value,
+    password.value
+  ).then(() => {
+    window.location.href = "panel.html";
+  }).catch(err => alert(err.message));
+}
+</script>
+
+</body>
+</html>

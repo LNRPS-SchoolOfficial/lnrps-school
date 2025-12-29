@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Admin Notice Panel</h2>
+
+<textarea id="noticeText" placeholder="Enter notice"></textarea><br>
+<button onclick="addNotice()">Add Notice</button>
+
+<ul id="adminNotices"></ul>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script>
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+function addNotice() {
+  db.collection("notices").add({
+    text: noticeText.value,
+    date: new Date()
+  });
+  noticeText.value = "";
+}
+</script>
+
+</body>
+</html>
