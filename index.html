@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Laxmi Narayan Residential Public School</title>
+  <title>Laxmi Narayan Residential Public School, Naro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -50,10 +50,11 @@
       background: #0b3c5d;
     }
 
-    /* BANNER */
+    /* BANNER (FIXED – FULL IMAGE SHOWS) */
     .banner {
-      background: url("images/banner.jpg") center/cover no-repeat;
-      height: 350px;
+      background: url("images/banner.jpg") center / contain no-repeat;
+      width: 100%;
+      aspect-ratio: 1920 / 600;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -66,7 +67,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,0.5);
+      background: rgba(0, 0, 0, 0.35);
     }
 
     .banner-content {
@@ -124,6 +125,26 @@
       padding: 12px;
       margin-top: 40px;
     }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header img {
+        margin-bottom: 10px;
+      }
+
+      .banner h2 {
+        font-size: 26px;
+      }
+
+      .banner p {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 
@@ -132,7 +153,7 @@
   <!-- HEADER -->
   <header>
     <img src="images/school-logo.png" alt="School Logo">
-    <h1>Laxmi Narayan Residential Public School</h1>
+    <h1>Laxmi Narayan Residential Public School, Naro</h1>
   </header>
 
   <!-- NAVIGATION -->
@@ -149,7 +170,7 @@
   <!-- BANNER -->
   <div class="banner">
     <div class="banner-content">
-      <h2>Welcome to LNR Public School</h2>
+      <h2>Shaping Bright Minds with Discipline, Values & Excellence</h2>
       <p>Education • Discipline • Excellence</p>
     </div>
   </div>
@@ -183,9 +204,10 @@
 
   <!-- FOOTER -->
   <footer>
-    © 2025 Laxmi Narayan Residential Public School, NARO . All Rights Reserved.
+    © 2025 Laxmi Narayan Residential Public School, NARO. All Rights Reserved.
   </footer>
 
 </body>
 </html>
+
 
