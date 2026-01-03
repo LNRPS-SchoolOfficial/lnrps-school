@@ -52,16 +52,17 @@
 
     /* BANNER (FIXED – FULL IMAGE SHOWS) */
     .banner {
-      background: url("images/banner.jpg") center / contain no-repeat;
-      width: 100%;
-      aspect-ratio: 1920 / 600;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      position: relative;
-    }
+  background: url("images/banner.jpg") center center / cover no-repeat;
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
 
     .banner::after {
       content: "";
@@ -209,5 +210,6 @@
 
 </body>
 </html>
+
 
 
